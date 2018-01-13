@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/modtwo"
+    tools:context="com.example.hp.alert.Modify2">
+
+    <RelativeLayout
+        android:id="@+id/Header_sendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/tv_modify2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/Modify"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/others">
+
+        <EditText
+            android:id="@+id/name_mod2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="@string/hint_contactName"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/num_mod2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name_mod2"
+            android:layout_below="@+id/name_mod2"
+            android:layout_marginTop="49dp"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="@string/hint_contactNum"
+            android:inputType="phone" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/addContact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/name_mod2"
+            android:background="@drawable/clickeffect"
+            android:elevation="2dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/addcontact"
+            tools:ignore="ContentDescription" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/update_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="62dp"
+            android:background="@drawable/clickeffect"
+            android:elevation="2dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/greentick"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</RelativeLayout>

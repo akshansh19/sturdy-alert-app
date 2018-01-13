@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sendmsg"
+    tools:context="com.example.hp.alert.SendMessage">
+
+    <RelativeLayout
+        android:id="@+id/Header_sendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/header_Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/send_alerts"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/clickeffect"
+            app:srcCompat="@drawable/settings" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/SendMsg"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/clickeffect"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/sendsm" />
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Header_sendMsg"
+        android:alpha="0.75"
+        android:background="@drawable/others"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/modify_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/modifyicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/Menu_view1"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curved_bg"
+    android:clickable="true"
+    tools:context="com.example.hp.alert.Display_once">
+
+    <RelativeLayout
+        android:id="@+id/Header_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:padding="5dp"
+            android:text="@string/Head_Contacts"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            tools:ignore="RelativeOverlap" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/toInfo"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/clickeffect"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/infoff">
+
+        </android.support.v7.widget.AppCompatImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/others">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/add_con_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/clickeffect"
+            android:contentDescription="@string/add_contacts_btn_desc"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/addcontact" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_con_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="@string/contact_name_hint"
+            android:inputType="textPersonName" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_done"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/add_btn"
+            android:layout_below="@+id/counter"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/clickeffect"
+            android:elevation="2dp"
+            android:src="@drawable/ticks"
+            app:srcCompat="@drawable/ticks"
+            tools:ignore="RelativeOverlap" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/btn_done"
+            android:layout_below="@id/counter"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/clickeffect"
+            android:elevation="4dp"
+            android:src="@drawable/tickss"
+            app:srcCompat="@drawable/add"
+            tools:ignore="RelativeOverlap" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="37dp"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="@string/number_hint"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/counter"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>
